@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Emanuel Kovari</title>
+
+    <style>
+    body {
+          background-color: #222629;
+          color:#6B6E70;
+        }
+        body header h1 {
+          width: 80%;
+          margin: auto;
+          margin-bottom: 20px;
+          border-bottom: solid;
+          color:#61892F;
+          text-align: center;
+        }
+
+        div{text-align:center;}
+
+        p{text-align: center;
+          font-size: 120%;
+
+        }
+
+        img {
+          display: block;
+          margin: auto;
+          width: 20%;
+            height: auto;
+          border-radius: 10px;
+          border: 2px solid ;
+          border-style: groove;
+          border-color: #61892F;
+        }
+
+        h1,h2,h4{color: #61892F;
+        text-align: center;}
+
+        h3{
+          color:#86C232;
+          text-align: center;
+        }
+
+        table {
+          border: 2px solid ;
+          border-radius: 5px;
+          font-size: 120%;
+          text-align: center;
+          width: 30%;
+          margin: auto;
+          border-color: #61892F;
+          border-spacing: 5px;
+        }
+
+        table tr td{
+          border: 1px solid;
+          border-radius: 5px;
+          border-style:groove;
+          border-color: #61892F;
+        }
+
+        table tr td a {
+          color: #61892F;
+        }
+
+        a{ color: #61892F}
+
+
+        ul {
+          border: 2px solid ;
+          border-color: #61892F;
+          border-radius: 5px;
+          border-style:groove;
+          text-align: center;
+          width: 50%;
+          margin: auto;
+          list-style: none;
+          font-size: 120%;
+        }
+
+        ol{list-style:roman;
+        list-style-position: inside;
+        margin-bottom:1em;
+        font-size:120%}
+
+        ul li::before {
+                           content: "\00BB";
+                           color:#86C232;
+                           font-weight: bold;
+                           display: inline-block;
+                           width: 1em;
+                           margin-left: -1em;
+                               }
+        footer {
+          width: 50%;
+          margin: auto;
+          text-align: center;
+        }
+
+        #button{
+          display: flex;
+          justify-content: center;
+            align-items: center;
+            border-style: none;
+        }
+        button {
+          background: #40b5bc;
+          border-radius: 5px;
+        }
+
+        .nrcrt {
+            color: #61892F;
+          }
+
+        #contact {
+          color: #86C232;
+          text-align: center;
+          font-size: 120%;
+          font-weight: bolder;
+        }
+
+        #quote{
+          text-align: center;
+          font-family: cursive;
+          font-size: 140%;
+        }
+
+        </style>
+    </head>
+
+    <script>
+      function AltaViata()
+      {
+
+        document.body.style.backgroundColor = "#b6d5f2";
+        document.getElementById("profilePicture").src = "86493344_2713109992100138_6705030117602623488_o.jpg";
+        document.getElementById("name").innerHTML = "Software Developer"
+        document.getElementById("tabel").style.borderColor="#13628a";
+        document.getElementById("tabel").style.color="#13628a";
+        document.getElementById("profilePicture").style.borderRadius="50px";
+        document.getElementById("profilePicture").style.opacity = "0.95";
+        document.getElementById("profilePicture").style.border = "1em solid";
+        document.getElementById("profilePicture").style.borderColor = "#2997cf";
+        document.getElementById("educatie").innerHTML="Experiente ideal de obtinut:"
+
+        var qt = document.getElementById("quote");
+        qt.remove();
+
+        var lis = document.getElementById("hobby");
+        lis.remove();
+
+        var i;
+        var nr = document.getElementsByClassName("nrcrt");
+        var h1= document.getElementsByTagName("h1");
+        var h3= document.getElementsByTagName("h3");
+        var p = document.getElementsByTagName("p");
+        var links= document.getElementsByTagName("a");
+        var tabel = document.getElementById("tabel");
+
+        for(i = 0; i<h1.length; i++){
+          h1[i].style.color= "#1d4973";
+        }
+
+        for( i = 0; i <p.length; i++)
+        {
+          p[i].style.color = "#26a2e0";
+        }
+
+        for(i = 0; i<h3.length; i++){
+          h3[i].style.color= "#1d4973";
+          h3[i].style.fontFamily ="cursive";
+
+        }
+
+        for (i = 0; i < nr.length; i++) {
+            nr[i].style.color = "#13628a";
+        }
+
+        for(i=0; i<links.length; i++){
+          links[i].style.color="#13628a";
+        }
+
+
+        for(i=1;i<5;i++){
+          tabel.rows[i].cells[3].remove();
+          tabel.rows[i].cells[2].remove();
+        }
+
+        tabel.rows[1].cells[1].innerHTML = "Cisco Certified DevNet Specialist - IoT";
+        tabel.rows[2].cells[1].innerHTML = "Cisco Certified Network Associate (CCNA)";
+        tabel.rows[3].cells[1].innerHTML = "Certified Ethical Hacker (CEH)";
+        tabel.rows[4].cells[1].innerHTML = "CompTIA Security+";
+
+      }
+
+    </script>
+
+
+    <body>
+
+      <header >
+            <h1 id="name" >Emanuel Kovari</h1>
+      </header>
+      <main>
+        <section id="contact">
+            <img id="profilePicture" src="20200804182932_IMG_3771.jpg" alt="Me in a black t-shirt" >
+            <br>
+            <p><i>e-mail :</i> emanuelkovari@yahoo.com</p>
+
+        </section>
+
+        <section id="quote">
+            <q><i> O scoală bună rumegă gândirea altora, nu o memorează </i></q><i> - Vasile Ghica</i>
+        </section>
+
+        <br>
+        <div id="button">
+            <button onclick="AltaViata()"> Alta viata </button>
+        </div>
+
+        <section id="aprof">
+            <h3 id="educatie" >Discipline pe care aș dori să le aprofundez:</h3>
+
+
+            <table id="tabel">
+
+
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td class="nrcrt">1.</td>
+                    <td>Informatică aplicată</td>
+                    <td>anul I</td>
+                    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf" target="_blank">Fișa disciplinei</a></td>
+                </tr>
+
+                <tr>
+                    <td class="nrcrt">2.</td>
+                    <td>Programarea calculatoarelor - Limbaje </td>
+                    <td>anul I</td>
+                    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf" target="_blank">Fișa disciplinei</a></td>
+                </tr>
+
+                <tr>
+                    <td class="nrcrt">3.</td>
+                    <td>Rețele de calculatoare</td>
+                    <td>anul III</td>
+                    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3143.pdf" target="_blank">Fișa disciplinei</a></td>
+                </tr>
+
+                <tr>
+                    <td class="nrcrt">4.</td>
+                    <td>Microprocesoare</td>
+                    <td>anul III</td>
+                    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3133.pdf" target="_blank">Fișa disciplinei</a></td>
+                </tr>
+            </table>
+
+          </section>
+
+          <section id="hobby">
+
+            <h3>Hobby-uri și pasiuni reprezentative:</h3>
+
+            <ul>
+                <li>Fotografie</li>
+                <li>IOT ( Arduino, senzori, electronica digitală )</li>
+                <li>Rețelistică (configurarea și creearea topologiilor, network automation )</li>
+                <li>Algoritmică ( programare în C++ )</li>
+           </ul>
+
+         </section>
+         </main>
+
+    
+
+    </body>
+
+</html>
