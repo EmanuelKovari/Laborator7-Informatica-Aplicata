@@ -1,0 +1,118 @@
+body {
+      background-color: #222629;
+      color:#6B6E70;
+    }
+    body header h1 {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+      border-bottom: solid;
+      color:#61892F;
+      text-align: center;
+    }
+
+    div{text-align:center;}
+
+    p{text-align: center;
+      font-size: 120%;
+
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      width: 20%;
+        height: auto;
+      border-radius: 10px;
+      border: 2px solid ;
+      border-style: groove;
+      border-color: #61892F;
+    }
+
+    h1,h2,h4{color: #61892F;
+    text-align: center;}
+
+    h3{
+      color:#86C232;
+      text-align: center;
+    }
+
+    table {
+      border: 2px solid ;
+      border-radius: 5px;
+      font-size: 120%;
+      text-align: center;
+      width: 30%;
+      margin: auto;
+      border-color: #61892F;
+      border-spacing: 5px;
+    }
+
+    table tr td{
+      border: 1px solid;
+      border-radius: 5px;
+      border-style:groove;
+      border-color: #61892F;
+    }
+
+    table tr td a {
+      color: #61892F;
+    }
+
+    a{ color: #61892F}
+
+
+    ul {
+      border: 2px solid ;
+      border-color: #61892F;
+      border-radius: 5px;
+      border-style:groove;
+      text-align: center;
+      width: 50%;
+      margin: auto;
+      list-style: none;
+      font-size: 120%;
+    }
+
+    ol{list-style:roman;
+    list-style-position: inside;
+    margin-bottom:1em;
+    font-size:120%}
+
+    ul li::before {
+                       content: "\00BB";
+                       color:#86C232;
+                       font-weight: bold;
+                       display: inline-block;
+                       width: 1em;
+                       margin-left: -1em;
+                           }
+    footer {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .nrcrt {
+        color: #61892F;
+      }
+
+    #contact {
+      color: #86C232;
+      text-align: center;
+      font-size: 120%;
+      font-weight: bolder;
+    }
+
+    #quote{
+      text-align: center;
+      font-family: cursive;
+      font-size: 140%;
+    }
+
+    #Catalog {
+      color: #66ccff;
+    }
+
+
+    </style>
